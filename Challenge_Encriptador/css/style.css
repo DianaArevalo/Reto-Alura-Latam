@@ -1,0 +1,43 @@
+body{
+    background-color: #AAB2D5;
+}
+/*header*/
+header {
+    background-color: #AAB2D5;
+    
+}
+
+.header {
+    background-color: aquamarine;
+    width: 90%;
+    margin: auto;
+}
+
+.header__logo{
+    margin-top: 40px;
+}
+
+/*Main*/
+
+.main{
+    background-color: blueviolet;
+    width: 85%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.left{
+    background-color: coral;
+}
+
+.right{
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 770px) {
+    .main{
+        grid-template-columns:1fr
+    }
+}
+
