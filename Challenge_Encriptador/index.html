@@ -21,22 +21,21 @@
     <main>
         <div class="main">
             <div class="left">
-                <textarea class="text_area" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea id="ingresoTexto" class="text_area" placeholder="Ingrese el texto aqui"></textarea>
                 <div class="left__footer">
                     <img src="./imagenes/exclamacion.svg" alt="">
                     <span class="left__info">Solo letras minusculas y sin acentos</span>
                     <div class="left__botones">
-                        <button class="boton__encriptar">Encriptar </button>
-                        <button class="boton__desencriptar">Desencriptar</button>
+                        <button id="botonEncriptar" class="boton__encriptar">Encriptar </button>
+                        <button id="botonDesencriptar"class="boton__desencriptar">Desencriptar</button>
                     </div>                    
                 </div>           
             </div>
-            <div class="right ajustar">
-                <img class="muneco" src="./imagenes/Muñeco.svg" alt="">
-               
-                    <p class="mensaje__final ajustar">Ningun mensaje fue encontrado</p>
-                <p class="right__info">Ingresa el texto que desees encriptar o desncriptar</p>
-                <button class="boton__copiar oculto">copiar</button>
+            <div id="right" class="right">
+                <img id="muneco" class="muneco" src="./imagenes/Muñeco.svg" alt="">
+                <textarea id="mensajeFinal" class="mensaje__final ajustar" placeholder="Ningun mensaje fue encontrado"></textarea>
+                <p id="rightInfo" class="right__info">Ingresa el texto que desees encriptar o desncriptar</p>
+                <button id="botonCopiar" class="boton__copiar oculto">copiar</button>
 
              
                 
@@ -49,6 +48,8 @@
     <!-- <footer>
         footer
     </footer> -->
+
+    <script src="./js/script.js"></script>
     
 </body>
 </html>

@@ -13,6 +13,10 @@ body{
     background-color: #AAB2D5;
     font-family: "Inter", sans-serif;
 }
+
+textarea {
+    font-family: 'Inter', sans-serif;
+}
 /*header*/
 header {
     background-color: var(--color-background);
@@ -80,11 +84,12 @@ header {
 .boton__encriptar, 
 .boton__desencriptar,
 .boton__copiar {
+    cursor: pointer;
     max-width: 328px;
     width: 40%;
     height: 67px;
     font-size: 16px;
-    border-radius: 24px;  
+    border-radius: 24px;   
     
 }
 
@@ -95,11 +100,14 @@ header {
     border: 2px solid white; 
 }
 
+
 .boton__desencriptar{
     background-color: var(--color-gris);
     color: var(--color-blue);
     border: 2px solid var(--color-blue); 
 }
+
+
 
 .right{
     background-color: var(--color-moradito);
@@ -113,6 +121,7 @@ header {
     justify-content: center;
     gap: 32px;
     align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 .right.ajustar{
@@ -123,11 +132,25 @@ header {
     width: 100%;
 }
 
+.oculto{
+    display: none;
+}
+
 .mensaje__final{
-    
+    background: none;
+    color: var(--color-blue);
+    border: none;
+    outline: none;
+    resize: none;
     text-align: center;
     font-weight: bold;
     font-size: 24px;
+}
+
+.mensaje__final.ajustar{
+    text-align: left;
+    font-weight: 400;
+    height: 80%;
 }
 
 .right__info{
@@ -138,13 +161,13 @@ header {
 
 .boton__copiar{
     width: 100%;
+    display: none;
     background-color: transparent;
     color: var(--color-blue)
+    
 }
 
-.oculto{
-    display: none;
-}
+
 
 /* footer{
     background-color: aquamarine;
