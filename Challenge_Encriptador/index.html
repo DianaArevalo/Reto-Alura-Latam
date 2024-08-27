@@ -6,6 +6,9 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,26 +21,34 @@
     <main>
         <div class="main">
             <div class="left">
-                <textarea placeholder="Ingrese el texto aqui"></textarea>
-            <img src="./imagenes/exclamacion.svg" alt="">
-            <p>Solo letras minusculas y sin acentos</p>
-            <button>Encriptar </button>
-            <button>Desencriptar</button>
+                <textarea class="text_area" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="left__footer">
+                    <img src="./imagenes/exclamacion.svg" alt="">
+                    <span class="left__info">Solo letras minusculas y sin acentos</span>
+                    <div class="left__botones">
+                        <button class="boton__encriptar">Encriptar </button>
+                        <button class="boton__desencriptar">Desencriptar</button>
+                    </div>                    
+                </div>           
             </div>
-            <div class="right">
-                <img src="./imagenes/Muñeco.svg" alt="">
-                <p>Ningun mensaje fue encontrado</p>
-                <p>Ingresa el texto que desees encriptar o desncriptar</p>
-                <button>copiar</button>
+            <div class="right ajustar">
+                <img class="muneco" src="./imagenes/Muñeco.svg" alt="">
+               
+                    <p class="mensaje__final ajustar">Ningun mensaje fue encontrado</p>
+                <p class="right__info">Ingresa el texto que desees encriptar o desncriptar</p>
+                <button class="boton__copiar oculto">copiar</button>
+
+             
+                
             </div>      
 
         </div>
          
         
     </main>
-    <footer>
+    <!-- <footer>
         footer
-    </footer>
+    </footer> -->
     
 </body>
 </html>
